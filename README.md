@@ -1,7 +1,12 @@
 # About The App
 
 Asmall web app that list the most starred Github repos that were created in the last 30 days.
-## Run The App
+
+## Open The App
+
+via: https://reposapp.herokuapp.com
+
+## Run The App Locally
 
 * npm i
 * ng serve
