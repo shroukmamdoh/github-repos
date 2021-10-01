@@ -1,1 +1,8 @@
-<p>repositories-list works!</p>
+<div class="repo-list" *ngIf="reposList">
+    <div class="repo-item" *ngFor="let repo of reposList">
+        <app-repository-item [repo]="repo"></app-repository-item>
+    </div>
+</div>
+<div class="default-content" *ngIf="!reposList">
+    <p>There are no repositories right now, try again later 🙁</p>
+</div>

@@ -1,0 +1,76 @@
+@import "../../../../../assets/styles/variables";
+@import "../../../../../assets/styles/mixins";
+
+.item {
+  display: flex;
+  border: 1px solid $secondary-layout-background;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px;
+  max-width: 886px;
+  height: 100px;
+  &:hover {
+    background-color: $secondary-layout-background;
+  }
+  .owner-photo {
+    height: 80px;
+    width: 80px;
+    border-radius: 4px;
+    margin-right: 16px;
+    border: 1px solid $secondary-layout-background;
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+  .repo-desc {
+    color: $primary-font-color;
+    padding-top: 4px;
+    h2.repo-title {
+      @include base-font(20px, 900, 18px);
+      padding: 0;
+      margin: 0 0 8px 0;
+      text-transform: capitalize;
+    }
+    p.desc {
+      @include base-font(14px, normal, 16px);
+      margin: 0 0 8px 0;
+    }
+    a.owner-name {
+      color: $main-color !important;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .statistics {
+      span.stars {
+        border: 1px solid $secondary-layout-background;
+        padding: 4px;
+        border-radius: 2px;
+        margin-right: 8px;
+      }
+      span.issues {
+        border: 1px solid $secondary-layout-background;
+        padding: 4px;
+        border-radius: 2px;
+        margin-right: 8px;
+      }
+      svg {
+        fill: $icon-color;
+        margin-right: 4px;
+      }
+      span.text {
+        color: $secondary-font-color;
+        @include base-font(14px, normal, 16px);
+      }
+      span.number {
+        color: $primary-font-color;
+        @include base-font(14px, 400, 16px);
+        margin-right: 4px;
+      }
+      span.last-text {
+        color: $primary-font-color;
+        @include base-font(14px, 400, 16px);
+      }
+    }
+  }
+}

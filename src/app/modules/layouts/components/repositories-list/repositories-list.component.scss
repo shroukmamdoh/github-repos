@@ -1,0 +1,12 @@
+@import "../../../../../assets/styles/variables";
+@import "../../../../../assets/styles/mixins";
+
+.default-content {
+  height: 100%;
+  text-align: center;
+  p {
+    position: relative;
+    top: 30%;
+    @include base-font(26px, 400, 24px);
+  }
+}

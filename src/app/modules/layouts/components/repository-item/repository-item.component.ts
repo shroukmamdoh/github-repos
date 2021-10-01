@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-repository-item',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repository-item.component.scss']
 })
 export class RepositoryItemComponent implements OnInit {
-
+  @Input() repo:any
   constructor() { }
 
   ngOnInit(): void {
