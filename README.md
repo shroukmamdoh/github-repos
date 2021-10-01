@@ -3,8 +3,8 @@
 Asmall web app that list the most starred Github repos that were created in the last 30 days.
 ## Run The App
 
->> npm i
->> ng serve
+* npm i
+* ng serve
 
 Then Navigate to `http://localhost:{{$--yourPort}}/`. to get the app home page
 
