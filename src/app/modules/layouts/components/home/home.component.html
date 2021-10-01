@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div
+  class="home-page"
+  *ngIf="reposList"
+  infinite-scroll
+  (scrolled)="onScrollDown($event)"
+  [scrollWindow]="true"
+  [alwaysCallback]="true"
+  [ngStyle]="{height: reposList? '100%' : '93.9vh'}"
+>
+  <app-repositories-list [reposList]="reposList"></app-repositories-list>
+</div>

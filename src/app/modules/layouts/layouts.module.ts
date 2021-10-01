@@ -5,6 +5,7 @@ import { RepositoryItemComponent } from './components/repository-item/repository
 import { RepositoriesListComponent } from './components/repositories-list/repositories-list.component';
 import { LostPageComponent } from '../shared/components/lost-page/lost-page.component';
 import { LayoutRoutingModule } from './layouts-routing.module';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LayoutRoutingModule } from './layouts-routing.module';
   ],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    InfiniteScrollModule
   ]
 })
 export class LayoutsModule { }
