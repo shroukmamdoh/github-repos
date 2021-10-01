@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RepositoryItemComponent } from './components/repository-item/repository-item.component';
 import { RepositoriesListComponent } from './components/repositories-list/repositories-list.component';
 import { LostPageComponent } from '../shared/components/lost-page/lost-page.component';
+import { LayoutRoutingModule } from './layouts-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LostPageComponent } from '../shared/components/lost-page/lost-page.comp
     LostPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    LayoutRoutingModule
   ]
 })
 export class LayoutsModule { }
